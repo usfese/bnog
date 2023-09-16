@@ -1,6 +1,4 @@
 FROM alpine:latest
-RUN apk install nodejs nodejs-npm
+RUN apk install nodejs
 COPY . /home/app
-RUN cd /home/app \
-    && npm install --production
 CMD [ "node" , "bin/www" ]
