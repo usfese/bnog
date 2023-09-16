@@ -2,9 +2,22 @@
   "name": "bnog",
   "version": "1.0.0",
   "description": "My nodejs blog",
-  "main": "index.js",
+  "author": "usfese",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usfese/bnog/issues"
+  },
+  "homepage": "https://github.com/usfese/bnog#readme"
   "scripts": {
-    "test": "node index.js"
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   },
   "repository": {
     "type": "git",
@@ -14,10 +27,5 @@
     "blog",
     "usfese"
   ],
-  "author": "usfese",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/usfese/bnog/issues"
-  },
-  "homepage": "https://github.com/usfese/bnog#readme"
+
 }
