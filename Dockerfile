@@ -3,7 +3,7 @@ RUN apk add --no-cache nodejs npm
 COPY ./* /home/app/
 WORKDIR /home/app
 RUN ls \
-    && npm install \
+    && npm install
 
 FROM alpine:latest as app
 WORKDIR /home/app
