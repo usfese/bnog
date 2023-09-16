@@ -8,4 +8,5 @@ RUN npm install \
 FROM alpine:latest as app
 WORKDIR /home/app
 RUN apk add --no-cache nodejs
+EXPOSE 3000
 CMD [ "node" , "bin/www" ]
