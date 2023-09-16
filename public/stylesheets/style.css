@@ -35,8 +35,15 @@ ul.topnav>li a:hover {
   transition: all 0.2s linear;
 }
 
-p.content {
-  width: 80%;
+div.content {
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
+  font-size: 24;
+  width: 60%;
   background-color: #9c9c9c;
   
 }
