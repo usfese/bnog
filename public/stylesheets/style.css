@@ -4,5 +4,39 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #0793ca;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  background-color: #545557;
+  overflow: hidden;
+}
+
+ul.topnav>li {
+  float: left;
+}
+
+ul.topnav>li a {
+  display: block;
+  background-color: #545557;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+ 
+ul.topnav>li a:hover {
+  background-color: #0793ca;
+  transition: all 0.2s linear;
+}
+
+p.content {
+  width: 80%;
+  background-color: #9c9c9c;
+  
 }

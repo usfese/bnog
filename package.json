@@ -9,6 +9,7 @@
   },
   "homepage": "https://github.com/usfese/bnog#readme",
   "scripts": {
+    "test": "nodemon ./bin/www",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -26,6 +27,8 @@
   "keywords": [
     "blog",
     "usfese"
-  ]
-
+  ],
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
