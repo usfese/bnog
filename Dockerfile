@@ -1,12 +1,14 @@
 FROM alpine:latest as npmi
 RUN apk add --no-cache nodejs npm
-WORKDIR /home/app
-COPY . .
-RUN npm install \
-    && apk del npm
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm install --production
 
 FROM alpine:latest as app
-WORKDIR /home/app
-RUN apk add --no-cache nodejs
+WORKDIR /app
+RUN apk add --no-cache nodejs npm
+COPY . /app
+COPY --from=npmi /app/node_modules ./node_modules
 EXPOSE 3000
-CMD [ "node" , "./bin/www" ]
+CMD [ "npm", "start" ]
+
