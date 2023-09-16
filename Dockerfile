@@ -5,6 +5,6 @@ WORKDIR /home/app
 RUN npm install \
     && apk del npm
 
-FROM alpine:latest
+FROM alpine:latest as app
 WORKDIR /home/app
 CMD [ "node" , "bin/www" ]
