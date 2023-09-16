@@ -1,7 +1,7 @@
 FROM alpine:latest as npmi
 RUN apk add --no-cache nodejs npm
-COPY ./* /home/app/
 WORKDIR /home/app
+COPY . .
 RUN npm install \
     && apk del npm
 
