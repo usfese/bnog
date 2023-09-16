@@ -1,0 +1,23 @@
+{
+  "name": "bnog",
+  "version": "1.0.0",
+  "description": "My nodejs blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usfese/bnog.git"
+  },
+  "keywords": [
+    "blog",
+    "usfese"
+  ],
+  "author": "usfese",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usfese/bnog/issues"
+  },
+  "homepage": "https://github.com/usfese/bnog#readme"
+}
