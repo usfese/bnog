@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/usfese/bnog/issues"
   },
-  "homepage": "https://github.com/usfese/bnog#readme"
+  "homepage": "https://github.com/usfese/bnog#readme",
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -26,6 +26,6 @@
   "keywords": [
     "blog",
     "usfese"
-  ],
+  ]
 
 }
