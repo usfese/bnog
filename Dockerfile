@@ -1,4 +1,4 @@
 FROM alpine:latest
-RUN apk install nodejs
+RUN apk add --no-cache nodejs
 COPY . /home/app
 CMD [ "node" , "bin/www" ]
